@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 17:31:15 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/06 18:29:42 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/06 19:03:13 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Zombie {
 		void	announce(void);
 
 	private:
-		std::string name;
+		std::string _name;
 };
 
 Zombie *newZombie(std::string name);
