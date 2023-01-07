@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 18:40:32 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/07 22:45:26 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/07 23:32:20 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& from)
 
 void ClapTrap::attack(const std::string& target)
 {
-	if (!this->_hp)
+	if (this->_hp <= 0)
 		std::cout << "ClapTrap " << this->_name << " is dead." << std::endl;
-	else if (!this->_energy)
+	else if (this->_energy <= 0)
 		std::cout << "ClapTrap " << this->_name << " is out of energy." << std::endl;
 	else
 	{
@@ -55,12 +55,12 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-	if (!this->_hp)
+	if (this->_hp <= 0)
 		std::cout << "ClapTrap " << this->_name << " is already dead." << std::endl;
 	else
 	{
 		this->_hp -= amount;
-		if (!this->_hp)
+		if (this->_hp <= 0)
 			std::cout << "ClapTrap " << this->_name << " takes " << amount << " damage and dies!" << std::endl;
 		else
 			std::cout << "ClapTrap " << this->_name << " takes " << amount << " damage!" << std::endl;
@@ -69,9 +69,9 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	if (!this->_hp)
+	if (this->_hp <= 0)
 		std::cout << "ClapTrap " << this->_name << " is dead." << std::endl;
-	else if (!this->_energy)
+	else if (this->_energy <= 0)
 		std::cout << "ClapTrap " << this->_name << " is out of energy." << std::endl;
 	else
 	{

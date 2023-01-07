@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 18:40:32 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/07 23:33:00 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/07 23:31:18 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void ClapTrap::attack(const std::string& target)
 		this->_energy--;
 		std::cout << "ClapTrap " << this->_name << " attacks " << target << ", causing " << this->_damage << " points of damage!" << std::endl;
 	}
-		
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
