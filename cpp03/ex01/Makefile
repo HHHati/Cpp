@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/07 23:04:58 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/07 23:04:48 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,13 @@ CC = g++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = claptrap
+NAME = scavtrap
 
 INC_DIR = .
 
 SRC = main.cpp\
 	  ClapTrap.cpp\
+	  ScavTrap.cpp\
 	  
 OBJ = $(SRC:.cpp=.o)
 
