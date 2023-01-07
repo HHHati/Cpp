@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/07 11:33:20 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/07 11:16:22 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,14 +14,12 @@ CC = g++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = fight
+NAME = replace
 
 INC_DIR = .
 
 SRC = main.cpp\
-	  HumanA.cpp\
-	  HumanB.cpp\
-	  Weapon.cpp\
+	  
 
 OBJ = $(SRC:.cpp=.o)
 

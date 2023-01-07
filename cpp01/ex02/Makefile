@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/06 19:35:34 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/07 11:34:02 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC = g++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = ex02
+NAME = brain
 
 INC_DIR = .
 
