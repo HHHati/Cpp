@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 15:08:57 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/10 12:41:48 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/10 13:18:06 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ void	Account::displayStatus(void) const
 		<< "index:" << this->_accountIndex << ";"
 		<< "amount:" << this->_amount << ";"
 		<< "deposits:" << this->_nbDeposits << ";"
-		<< "withdrawals:" << this->_nbWithdrawals << ";"
+		<< "withdrawals:" << this->_nbWithdrawals
 		<< std::endl;
 }
 
@@ -131,7 +131,7 @@ void	Account::_displayTimestamp(void)
 	tm *time = std::localtime(&t);
 
 	std::cout
-		<< "]"
+		<< "["
 		<< std::setw(4) << std::setfill('0') << 1900 + time->tm_year
 		<< std::setw(2) << std::setfill('0') << 1 + time->tm_mon
 		<< std::setw(2) << std::setfill('0') << time->tm_mday
