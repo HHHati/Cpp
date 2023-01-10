@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/10 11:30:01 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/10 12:39:07 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ NAME = account
 
 INC_DIR = .
 
-SRC = 
+SRC = Account.cpp\
+	  tests.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 

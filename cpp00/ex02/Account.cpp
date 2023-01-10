@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 15:08:57 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/10 11:37:57 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/10 12:41:48 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,22 @@ int Account::_totalNbWithdrawals = 0;
 
 int	Account::getNbAccounts(void)
 {
-	return (this->_nbAccounts);
+	return (_nbAccounts);
 }
 
 int	Account::getTotalAmount(void)
 {
-	return (this->_totalAmount);
+	return (_totalAmount);
 }
 
 int	Account::getNbDeposits(void)
 {
-	return (this->_totalNbDeposits);
+	return (_totalNbDeposits);
 }
 
 int	Account::getNbWithdrawals(void)
 {
-	return (this->_totalNbWithdrawals);
+	return (_totalNbWithdrawals);
 }
 
 Account::Account(int initial_deposit)
@@ -101,7 +101,7 @@ bool	Account::makeWithdrawal(int withdrawal)
 
 int		Account::checkAmount(void) const
 {
-	return (this->_account);
+	return (this->_amount);
 }
 
 void	Account::displayStatus(void) const
@@ -109,7 +109,7 @@ void	Account::displayStatus(void) const
 	Account::_displayTimestamp();
 	std::cout
 		<< "index:" << this->_accountIndex << ";"
-		<< "amount:" << this->_account << ";"
+		<< "amount:" << this->_amount << ";"
 		<< "deposits:" << this->_nbDeposits << ";"
 		<< "withdrawals:" << this->_nbWithdrawals << ";"
 		<< std::endl;
@@ -132,13 +132,13 @@ void	Account::_displayTimestamp(void)
 
 	std::cout
 		<< "]"
-		<< std::setw(4) << std::setfill('0') << 1900 + local->tm_year
-		<< std::setw(2) << std::setfill('0') << 1 + local->tm_mon
-		<< std::setw(2) << std::setfill('0') << local->tm_mday
+		<< std::setw(4) << std::setfill('0') << 1900 + time->tm_year
+		<< std::setw(2) << std::setfill('0') << 1 + time->tm_mon
+		<< std::setw(2) << std::setfill('0') << time->tm_mday
 		<< "_"
-		<< std::setw(2) << std::setfill('0') << 1 + local->tm_hour
-		<< std::setw(2) << std::setfill('0') << 1 + local->tm_min
-		<< std::setw(2) << std::setfill('0') << 1 + local->tm_sec
+		<< std::setw(2) << std::setfill('0') << 1 + time->tm_hour
+		<< std::setw(2) << std::setfill('0') << 1 + time->tm_min
+		<< std::setw(2) << std::setfill('0') << 1 + time->tm_sec
 		<< "] ";
 	return ;
 }
