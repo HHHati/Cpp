@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 15:08:57 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/06 15:51:08 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/10 11:37:57 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,22 @@ int Account::_totalNbWithdrawals = 0;
 
 int	Account::getNbAccounts(void)
 {
-	return (_nbAccounts);
+	return (this->_nbAccounts);
 }
 
 int	Account::getTotalAmount(void)
 {
-	return (_totalAmount);
+	return (this->_totalAmount);
 }
 
 int	Account::getNbDeposits(void)
 {
-	return (_totalNbDeposits);
+	return (this->_totalNbDeposits);
 }
 
 int	Account::getNbWithdrawals(void)
 {
-	return (_totalNbWithdrawals);
+	return (this->_totalNbWithdrawals);
 }
 
 Account::Account(int initial_deposit)
