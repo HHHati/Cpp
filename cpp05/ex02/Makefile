@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/11 19:57:12 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/11 19:56:57 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,10 @@ INC_DIR = .
 
 SRC = main.cpp\
 	  Bureaucrat.cpp\
+	  Form.cpp\
+	  PresidentialPardonForm.cpp\
+	  RobotomyRequestForm.cpp\
+	  ShrubberyCreationForm.cpp\
 
 	  
 OBJ = $(SRC:.cpp=.o)
