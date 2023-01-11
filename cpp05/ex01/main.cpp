@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 21:06:11 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/11 14:39:13 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/11 15:21:33 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,9 @@ int main()
 	catch(const std::exception& e) { std::cerr << e.what() << std::endl; }
 
 	try { form2.beSigned(employee); }
+	catch(const std::exception& e) { std::cerr << e.what() << std::endl; }
+
+	try { form1.beSigned(employee); }
 	catch(const std::exception& e) { std::cerr << e.what() << std::endl; }
 
 	try { Form form3("form3", 160, 160); }

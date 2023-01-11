@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 23:59:01 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/09 00:52:49 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/11 15:20:51 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,15 @@ class Form{
 				virtual const char * what() const throw()
 				{
 					return ("grade is too low");
+				}
+		};
+
+		class FormAlreadySignedException : public std::exception
+		{
+			public:
+				virtual const char * what() const throw()
+				{
+					return ("form already signed");
 				}
 		};
 

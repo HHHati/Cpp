@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 23:59:37 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/09 01:04:37 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/11 15:22:34 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ void	Form::beSigned(Bureaucrat& bureaucrat)
 {
 	if (bureaucrat.getGrade() >= this->_gradetosign)
 		throw GradeTooLowException();
+	if (this->_signed == 1)
+		throw FormAlreadySignedException();
 	this->_signed = 1;
 }
 
