@@ -6,11 +6,11 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/07 11:44:31 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/11 14:21:06 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = g++
+CC = c++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
