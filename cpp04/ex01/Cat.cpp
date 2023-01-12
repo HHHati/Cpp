@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:33:01 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 15:33:53 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 14:57:43 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ Cat::~Cat(void)
 Cat& Cat::operator=(const Cat& from)
 {
 	this->_type = from._type;
+	*this->_brain = *from._brain;
 	return *this;
 }
 

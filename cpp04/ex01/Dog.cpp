@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:32:59 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 15:33:57 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 14:57:39 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ Dog::~Dog(void)
 Dog& Dog::operator=(const Dog& from)
 {
 	this->_type = from._type;
+	*this->_brain = *from._brain;
 	return *this;
 }
 
