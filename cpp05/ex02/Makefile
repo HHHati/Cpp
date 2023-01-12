@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/11 19:56:57 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/11 21:55:18 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC = c++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = bureaucrat
+NAME = specialform
 
 INC_DIR = .
 

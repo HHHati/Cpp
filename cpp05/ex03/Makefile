@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/11 21:55:07 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/12 13:05:29 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,17 @@ CC = c++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = form
+NAME = intern
 
 INC_DIR = .
 
 SRC = main.cpp\
 	  Bureaucrat.cpp\
 	  Form.cpp\
+	  PresidentialPardonForm.cpp\
+	  RobotomyRequestForm.cpp\
+	  ShrubberyCreationForm.cpp\
+	  Intern.cpp\
 
 	  
 OBJ = $(SRC:.cpp=.o)
