@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:30:03 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 15:28:09 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:16:21 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Cat : public Animal{
 
 		Cat();
 		Cat(const Cat& from);
-		~Cat();
+		virtual ~Cat();
 
 		Cat& operator=(const Cat& from);
 

@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:30:00 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 16:07:33 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:19:10 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Dog : public AAnimal{
 
 		Dog();
 		Dog(const Dog& from);
-		~Dog();
+		virtual ~Dog();
 
 		Dog& operator=(const Dog& from);
 

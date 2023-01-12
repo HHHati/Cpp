@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:24:13 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 14:31:02 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:16:13 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Animal{
 
 		Animal();
 		Animal(const Animal& from);
-		~Animal();
+		virtual ~Animal();
 
 		Animal& operator=(const Animal& from);
 

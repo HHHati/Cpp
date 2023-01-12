@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:23:48 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 17:13:42 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:23:53 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include "Cat.hpp"
 #include "Brain.hpp"
 #include "WrongCat.hpp"
-#include <iomanip>
 
 
 int	main(void)
@@ -26,6 +25,8 @@ int	main(void)
 		animal_array[i + 5] = new Dog();
 	}
 	
+	//To check if we can call the abstract class
+
 	// const AAnimal* animal = new AAnimal();
 	// std::cout << "Hi, I am a " << animal->getType() << " and I don't have a Brain!" << std::endl;
 	// animal->makeSound();
@@ -91,5 +92,6 @@ int	main(void)
 		delete animal_array[i];
 		delete animal_array[i + 5];
 	}
+	system("leaks abstract");
 	return (0);
 }
