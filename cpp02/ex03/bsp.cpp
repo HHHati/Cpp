@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 18:40:30 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/07 20:32:25 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 12:13:19 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,24 +37,3 @@ bool	bsp(Point const a, Point const b, Point const c, Point const point)
 	return big == lila + lilb + lilc;
 }
 
-
-
-// float	area(float x1, float y1, float x2, float y2, float x3, float y3)
-// {
-// 	return abs((x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2))/2);
-// }
-
-// bool	bsp(Point const a, Point const b, Point const c, Point const point)
-// {
-// 	float big = area(a.getX().toFloat(), a.getY().toFloat(), b.getX().toFloat(), b.getY().toFloat(), c.getX().toFloat(), c.getY().toFloat());
-// 	float lila = area(point.getX().toFloat(), point.getY().toFloat(), b.getX().toFloat(), b.getY().toFloat(), c.getX().toFloat(), c.getY().toFloat());
-// 	float lilb = area(a.getX().toFloat(), a.getY().toFloat(), point.getX().toFloat(), point.getY().toFloat(), c.getX().toFloat(), c.getY().toFloat());
-// 	float lilc = area(a.getX().toFloat(), a.getY().toFloat(), b.getX().toFloat(), b.getY().toFloat(), point.getX().toFloat(), point.getY().toFloat());
-// 	if (big == lila + lilb + lilc)
-// 		return 1;
-// 	else
-// 		return 0;
-// }
-
-
-		
