@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 23:17:12 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/07 23:31:42 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:29:03 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ FragTrap::FragTrap() : ClapTrap()
 	this->_damage = 30;
 }
 
-FragTrap::FragTrap(std::string name) : ClapTrap()
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "FragTrap constructor called (" << name << ")" << std::endl;
 	this->_name = name;

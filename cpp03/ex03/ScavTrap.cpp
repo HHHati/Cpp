@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 22:33:50 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 13:03:46 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:34:27 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,10 @@ ScavTrap::~ScavTrap(void)
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& from)
 {
+	this->_name = from._name;
+	this->_hp = from._hp;
+	this->_energy = from._energy;
+	this->_damage = from._damage;
 	return *this;
 }
 

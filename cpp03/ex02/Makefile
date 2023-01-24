@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/11 14:24:03 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/24 15:28:57 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRC = main.cpp\
 	  ClapTrap.cpp\
 	  ScavTrap.cpp\
 	  FragTrap.cpp\
-	  
+
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -30,7 +30,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CPP_FLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.c
+%.o: %.cpp
 	@$(CC) $(CPP_FLAGS) -I $(INC_DIR) -c $< -o $@
 
 clean:

@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 23:17:12 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 13:03:22 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:34:21 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,10 @@ FragTrap::~FragTrap(void)
 
 FragTrap& FragTrap::operator=(const FragTrap& from)
 {
+	this->_name = from._name;
+	this->_hp = from._hp;
+	this->_energy = from._energy;
+	this->_damage = from._damage;
 	return *this;
 }
 

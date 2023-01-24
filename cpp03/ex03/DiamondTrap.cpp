@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 23:38:04 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 13:06:58 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:37:40 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,10 @@ DiamondTrap::~DiamondTrap(void)
 
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap& from)
 {
+	this->_name = from._name;
+	this->_hp = from._hp;
+	this->_energy = from._energy;
+	this->_damage = from._damage;
 	return *this;
 }
 

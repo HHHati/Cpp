@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 18:40:32 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/08 12:33:53 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:33:40 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,10 @@ ClapTrap::~ClapTrap(void)
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& from)
 {
+	this->_name = from._name;
+	this->_hp = from._hp;
+	this->_energy = from._energy;
+	this->_damage = from._damage;
 	return *this;
 }
 

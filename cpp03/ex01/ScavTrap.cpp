@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 22:33:50 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/07 23:32:32 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 15:28:10 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ScavTrap::ScavTrap() : ClapTrap()
 	this->_damage = 20;
 }
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap()
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "ScavTrap constructor called (" << name << ")" << std::endl;
 	this->_name = name;
