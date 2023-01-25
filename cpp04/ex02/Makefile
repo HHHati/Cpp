@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/01/11 14:25:44 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/01/25 11:50:32 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(CC) $(CPP_FLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.c
+%.o: %.cpp
 	@$(CC) $(CPP_FLAGS) -I $(INC_DIR) -c $< -o $@
 
 clean:

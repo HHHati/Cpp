@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 13:23:48 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/12 16:20:12 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/01/24 16:00:17 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int	main(void)
 		delete animal_array[i];
 		delete animal_array[i + 5];
 	}
-//	system("leaks brain");
+	//system("leaks brain");
 	return (0);
 }
 
