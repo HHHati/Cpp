@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 23:59:37 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/11 15:22:34 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:45:38 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,12 @@ const std::string Form::isSigned(void) const
 	return "yes";
 }
 
-const int		Form::getGradeToSign(void) const
+int		Form::getGradeToSign(void) const
 {
 	return this->_gradetosign;
 }
 
-const int		Form::getGradeToExec(void) const
+int		Form::getGradeToExec(void) const
 {
 	return this->_gradetoexec;
 }

@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 23:59:01 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/11 15:20:51 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:45:29 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ class Form{
 
 		const std::string getName(void) const;
 		const std::string isSigned(void) const;
-		const int		getGradeToSign(void) const;
-		const int		getGradeToExec(void) const;
+		int		getGradeToSign(void) const;
+		int		getGradeToExec(void) const;
 		void	beSigned(Bureaucrat& bureaucrat);
 		
 
