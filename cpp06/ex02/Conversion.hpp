@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Conversion.cpp                                     :+:      :+:    :+:   */
+/*   Conversion.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/12 15:18:41 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/01/12 15:42:32 by bade-lee         ###   ########.fr       */
+/*   Created: 2023/01/12 15:18:43 by bade-lee          #+#    #+#             */
+/*   Updated: 2023/04/17 14:21:59 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Conversion.hpp"
+#ifndef CONVERSION_HPP
+# define CONVERSION_HPP
 
-Conversion::Conversion(std::string param) : _param(param)
-{
-}
+# include <iostream>
+# include <cmath>
 
-Conversion::Conversion(const Conversion& from)
-{
-}
+class Conversion{
 
-Conversion::~Conversion()
-{
-}
+	public:
 
-Conversion& Conversion::operator=(const Conversion& from)
-{
-}
+		Conversion(const std::string& param);
+		Conversion(const Conversion& from);
+		~Conversion();
 
-char	Conversion::convertChar() const
+		Conversion& operator=(const Conversion& from);
 
+		void	convert();
+		char	convertChar();
+		int		convertInt();
+		float	convertFloat();
+		double	convertDouble();
 
-int	Conversion::convertInt() const
+	private:
 
+		std::string _param;
 
-float	Conversion::convertFloat() const
+};
 
-
-double	Conversion::convertDouble() const
-
+#endif
