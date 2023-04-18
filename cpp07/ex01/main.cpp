@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/16 14:00:27 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/04/18 15:28:31 by bade-lee         ###   ########.fr       */
+/*   Created: 2023/02/16 14:00:56 by bade-lee          #+#    #+#             */
+/*   Updated: 2023/04/18 15:27:55 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-# define ITER_HPP
+#include "iter.hpp"
 
-# include <iostream>
-
-template<class T> void	print_test(T &param)
+int	main()
 {
-	std::cout << param << std::endl;
+	std::cout << "Test with char :\n" << std::endl;
+	std::string test = "This is a test.";
+	::iter<const char>(test.c_str(), test.length(), print_test);
+	std::cout << "\n\nTest with int :\n" << std::endl;
+	int tab[] = {1, 2, 3, 4, 5};
+	::iter<int>(tab, 5, print_test);
 }
-
-template<class T> void	iter(T* ptr, size_t size, void(*fct)(T& param))
-{
-	for (size_t i = 0; i < size; i++)
-		fct(ptr[i]);
-}
-
-#endif
