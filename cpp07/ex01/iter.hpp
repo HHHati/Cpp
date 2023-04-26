@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:00:27 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/04/18 15:28:31 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/04/26 11:33:29 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 # define ITER_HPP
 
 # include <iostream>
-
-template<class T> void	print_test(T &param)
-{
-	std::cout << param << std::endl;
-}
 
 template<class T> void	iter(T* ptr, size_t size, void(*fct)(T& param))
 {

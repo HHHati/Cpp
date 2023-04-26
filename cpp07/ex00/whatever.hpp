@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 13:57:15 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/04/18 15:09:04 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/04/26 11:27:31 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,16 @@ template<class T> void	swap(T& a, T& b)
 
 template<class T> T		min(T& a, T& b)
 {
-	return a > b ? b : a;
+	if (a < b)
+		return a;
+	return b;
 }
 
 template<class T> T		max(T& a, T& b)
 {
-	return a > b ? a : b;
+	if (a > b)
+		return a;
+	return b;
 }
 
 #endif
