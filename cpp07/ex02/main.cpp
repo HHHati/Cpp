@@ -54,17 +54,17 @@ int main(int, char**)
 
 	std::cout << "\nPersonnal tests\n" << std::endl;
 
-	Array<int> test(10);
+	Array<int> test_array(10);
 	for (int i = 0; i < 10; i++)
-		test[i] = i;
+		test_array[i] = i;
 	std::cout << "Initial array : | ";
 	for (int i = 0; i < 10; i++)
-		std::cout << test[i] << " | ";
+		std::cout << test_array[i] << " | ";
 	std::cout << std::endl;
-	Array<int> copy(test);
+	Array<int> array_copy(test_array);
 	std::cout << "array copy    : | ";
 	for (int i = 0; i < 10; i++)
-		std::cout << copy[i] << " | ";
+		std::cout << array_copy[i] << " | ";
 	std::cout << std::endl;
 	return 0;
 }
