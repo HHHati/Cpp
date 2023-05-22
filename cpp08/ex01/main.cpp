@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:09:29 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/22 18:36:00 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/22 18:42:40 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,30 @@
 int main()
 {
 	std::cout << "┌────" << std::endl;
-	std::cout << "| GOOD TEST :" << std::endl;
-	Span span = Span(5);
-	span.addNumber(3);
-	span.addNumber(6);
-	span.addNumber(2);
-	span.addNumber(22);
-	span.addNumber(15);
-	std::cout << "| Vector : { 3 6 8 2 22 15 }" << std::endl;
-	std::cout << "| Shortest span : " << span.shortestSpan() << std::endl;
-	std::cout << "| Longest Span  :" << span.longestSpan() << std::endl;
+	std::cout << "| SUBJECT TEST :" << std::endl;
+	Span sp = Span(5);
+	sp.addNumber(6);
+	sp.addNumber(3);
+	sp.addNumber(17);
+	sp.addNumber(9);
+	sp.addNumber(11);
+	std::cout << "| " << sp.shortestSpan() << std::endl;
+	std::cout << "| " << sp.longestSpan() << std::endl;
+	std::cout << "└────" << std::endl;
+	
+	std::cout << "┌────" << std::endl;
+	std::cout << "| LITTLE TEST :" << std::endl;
+	Span little = Span(7);
+	little.addNumber(3);
+	little.addNumber(6);
+	little.addNumber(2);
+	little.addNumber(22);
+	little.addNumber(15);
+	little.addNumber(12);
+	little.addNumber(-3);
+	std::cout << "| Vector : { 3 6 8 2 22 15 12 -1}" << std::endl;
+	std::cout << "| Shortest span : " << little.shortestSpan() << std::endl;
+	std::cout << "| Longest Span  :" << little.longestSpan() << std::endl;
 	std::cout << "└────" << std::endl;
 	
 	std::cout << "┌────" << std::endl;
