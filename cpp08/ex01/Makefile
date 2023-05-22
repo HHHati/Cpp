@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/02/16 14:08:37 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/05/22 16:52:07 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC = c++
 
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = easyfind
+NAME = span
 
 INC_DIR = .
 
