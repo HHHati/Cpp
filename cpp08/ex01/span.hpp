@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:09:26 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/22 17:39:12 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/23 15:59:49 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ class Span{
 	public:
 
 		Span(unsigned int size);
+		Span(const Span& from);
 		~Span();
+
+		Span& operator=(const Span& from);
 
 		void	addNumber(int number);
 		int		longestSpan() const;

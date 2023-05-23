@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:08:48 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/22 18:02:05 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:01:19 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,19 @@ Span::Span(unsigned int size) : _size(size)
 {
 }
 
+Span::Span(const Span& from)
+{
+	*this = from;
+}
+
 Span::~Span(void)
 {
+}
+
+Span& Span::operator=(const Span& from)
+{
+	(void)from;
+	return *this;
 }
 
 void	Span::addNumber(int number)
