@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:13:04 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/23 14:13:48 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/23 14:23:13 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,6 @@ int main()
 	}
 	std::list<int> tlist2(tlist);
 	std::cout << "└────" << std::endl;
-	
+
 	return 0;
 }
