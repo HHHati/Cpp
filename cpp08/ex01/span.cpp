@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:08:48 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/23 16:01:19 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/24 15:40:12 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,26 @@ void	Span::addNumber(int number)
 	this->_vector.push_back(number);
 }
 
+void	Span::addMultNumber(int quantity)
+{
+	if ((this->_vector.size() + quantity - 1) >= this->_size)
+		throw std::exception();
+	int random;
+	srand(time(NULL));
+	for (int i = 0; i < quantity; i++)
+	{
+		random = rand() % RAND_MAX + 1;
+		this->_vector.push_back(random);
+	}
+}
+
 int	Span::longestSpan() const
 {
 	if (this->_vector.size() < 2)
 		throw std::exception();
-	int max = *std::min_element(this->_vector.begin(), this->_vector.end());
-	int min = *std::max_element(this->_vector.begin(), this->_vector.end());
-	return min - max;
+	int min = *std::min_element(this->_vector.begin(), this->_vector.end());
+	int max = *std::max_element(this->_vector.begin(), this->_vector.end());
+	return max - min;
 }
 
 int	Span::shortestSpan() const

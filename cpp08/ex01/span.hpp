@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 14:09:26 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/23 15:59:49 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/24 15:34:27 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Span{
 		Span& operator=(const Span& from);
 
 		void	addNumber(int number);
+		void	addMultNumber(int quantity);
 		int		longestSpan() const;
 		int		shortestSpan() const;
 	
