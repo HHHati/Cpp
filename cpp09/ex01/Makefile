@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/05/23 14:32:07 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/05/29 16:44:54 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ NAME = RPN
 INC_DIR = .
 
 SRC = main.cpp\
+	  RPN.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 
