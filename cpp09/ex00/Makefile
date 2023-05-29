@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/05/23 14:42:57 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/05/29 15:05:34 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ NAME = btc
 INC_DIR = .
 
 SRC = main.cpp\
+	  BitcoinExchange.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 
