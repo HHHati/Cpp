@@ -6,7 +6,7 @@
 #    By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 09:30:08 by bade-lee          #+#    #+#              #
-#    Updated: 2023/05/23 14:31:43 by bade-lee         ###   ########.fr        #
+#    Updated: 2023/05/29 17:01:40 by bade-lee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ NAME = PmergeMe
 INC_DIR = .
 
 SRC = main.cpp\
+	  PmergeMe.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 
