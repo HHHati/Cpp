@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 14:39:27 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/29 16:00:50 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:14:59 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,10 @@ void 	BitcoinExchange::readData(const std::string &filename)
 			continue;
 		}
 		if (!isValidDate(date))
+		{
+			std::cerr << "Error: Invalid date : " << "\"" << date << "\"" << "\n";
 			continue;
+		}
 		if (!isValidValue(value))
 			continue;
 		double exchangeRate = getExchangeRate(date);
@@ -110,28 +113,16 @@ bool	BitcoinExchange::isValidDate(const std::string& date)
 	int year, month, day;
 	std::istringstream year_ss(year_str), month_ss(month_str), day_ss(day_str);
 	if (!(year_ss >> year) || !(month_ss >> month) || !(day_ss >> day))
-	{
-		std::cerr << "Error: Invalid year : " << "\"" << date << "\"" << "\n";
 		return false;
-	}
 	if (year < 0 || month < 1 || month > 12 || day < 1 || day > 31)
-	{
-		std::cerr << "Error: Invalid month : " << "\"" << date << "\"" << "\n";
 		return false;
-	}
 	if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 30))
-	{
-		std::cerr << "Error: Invalid day : " << "\"" << date << "\"" << "\n";
 		return false;
-	}
 	if (month == 2)
 	{
 		bool isLeapYear = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
 		if ((isLeapYear && day > 29) || (!isLeapYear && day > 28))
-		{
-			std::cerr << "Error: Invalid day : " << "\"" << date << "\"" << "\n";
 			return false;
-		}
 	}
 	return true;
 }

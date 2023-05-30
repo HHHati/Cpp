@@ -6,7 +6,7 @@
 /*   By: bade-lee <bade-lee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 17:01:43 by bade-lee          #+#    #+#             */
-/*   Updated: 2023/05/30 10:55:09 by bade-lee         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:15:55 by bade-lee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ bool	check_arg(int argc, char **argv, std::list<int> &_list, std::deque<int> &_d
 	{
 		endptr = NULL;
 		l = strtol(word.c_str(), &endptr, 10);
-		if (*endptr == '\0' && l >= 0 && l < INT_MAX)
+		if (*endptr == '\0' && l >= 0 && l <= INT_MAX)
 		{
 			_list.push_back(l);
 			_deque.push_back(l);
